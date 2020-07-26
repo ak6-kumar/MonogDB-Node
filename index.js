@@ -9,7 +9,7 @@ const dbName = 'conFusion';
 MongoClient.connect(Url).then((client)=>{
     console.log("Connected to the MongoDB server");
     const db = client.db(dbName);
-    dbOp.insertDoc(db,{name:"Pizza",discription:"Lavde ki sarkar hai"},'dishes')
+    dbOp.insertDoc(db,{name:"Pizza",discription:"BJP ki sarkar hai"},'dishes')
     .then((result)=>{
         console.log("Insert Documents:\n",result.ops);
         
