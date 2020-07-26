@@ -18,7 +18,7 @@ MongoClient.connect(Url).then((client)=>{
     .then((docs)=>{
             console.log("Found documents\n",docs);
             
-            return dbOp.updateDoc(db,{name:"Pakoda"},{discription:"Kya bataye maa chudi padi hai"},'dishes');
+            return dbOp.updateDoc(db,{name:"Pakoda"},{discription:"Kya bataye"},'dishes');
     })
     .then((result)=>{
                 console.log("Updated doc",result.result);
